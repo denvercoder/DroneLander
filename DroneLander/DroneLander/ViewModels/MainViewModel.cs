@@ -75,8 +75,13 @@ namespace DroneLander
         public double Throttle
         {
             get { return this._throttle; }
-            set { this.SetProperty(ref this._throttle, value); }
+            set
+            {
+                this.SetProperty(ref this._throttle, value);
+                if (this.IsActive && this.FuelRemaining > 0.0) Helpers.AudioHelper.AdjustVolume(value);
+            }
         }
+
 
         private bool _isActionable() => true;
         private string _actionLabel;
@@ -116,6 +121,8 @@ namespace DroneLander
 
         public void StartLanding()
         {
+            Helpers.AudioHelper.ToggleEngine();
+
             Device.StartTimer(TimeSpan.FromMilliseconds(Common.CoreConstants.PollingIncrement), () =>
             {
                 UpdateFlightParameters();
@@ -129,6 +136,8 @@ namespace DroneLander
                         this.FuelRemaining = this.ActiveLandingParameters.Fuel / 1000;
                         this.Thrust = this.ActiveLandingParameters.Thrust;
                     });
+
+                    if (this.FuelRemaining == 0.0) Helpers.AudioHelper.KillEngine();
 
                     return this.IsActive;
                 }
@@ -158,6 +167,7 @@ namespace DroneLander
                 }
             });
         }
+
 
         private void UpdateFlightParameters()
         {
@@ -211,6 +221,8 @@ namespace DroneLander
 
         public async void ResetLanding()
         {
+            Helpers.AudioHelper.ToggleEngine();
+
             await Task.Delay(500);
 
             this.ActiveLandingParameters = new LandingParameters();
