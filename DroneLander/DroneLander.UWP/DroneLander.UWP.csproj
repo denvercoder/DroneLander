@@ -90,6 +90,13 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\DroneLander_150x150.scale-100.png" />
+    <Content Include="Assets\DroneLander_310x150.scale-100.png" />
+    <Content Include="Assets\DroneLander_310x310.scale-100.png" />
+    <Content Include="Assets\DroneLander_44x44.scale-100.png" />
+    <Content Include="Assets\DroneLander_71x71.scale-100.png" />
+    <Content Include="Assets\DroneLander_splash.scale-100.png" />
+    <Content Include="Assets\DroneLander_store.scale-100.png" />
     <Content Include="Assets\Fonts\Digital.ttf" />
     <None Include="project.json" />
   </ItemGroup>
@@ -112,47 +119,9 @@
     <None Include="DroneLander.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\DroneLander_150x150.scale-100.png" />
-    <Content Include="Assets\DroneLander_310x150.scale-100.png" />
-    <Content Include="Assets\DroneLander_310x310.scale-100.png" />
-    <Content Include="Assets\DroneLander_44x44.scale-100.png" />
-    <Content Include="Assets\DroneLander_71x71.scale-100.png" />
-    <Content Include="Assets\DroneLander_splash.scale-100.png" />
-    <Content Include="Assets\DroneLander_store.scale-100.png" />
     <Content Include="Assets\Sounds\engine.m4a" />
     <Content Include="drone_lander_back.jpg" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\LockScreenLogo.scale-100.png" />
-    <Content Include="Assets\LockScreenLogo.scale-125.png" />
-    <Content Include="Assets\LockScreenLogo.scale-150.png" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\LockScreenLogo.scale-400.png" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\SplashScreen.scale-125.png" />
-    <Content Include="Assets\SplashScreen.scale-150.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-400.png" />
-    <Content Include="Assets\Square150x150Logo.scale-100.png" />
-    <Content Include="Assets\Square150x150Logo.scale-125.png" />
-    <Content Include="Assets\Square150x150Logo.scale-150.png" />
-    <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square150x150Logo.scale-400.png" />
-    <Content Include="Assets\Square44x44Logo.scale-100.png" />
-    <Content Include="Assets\Square44x44Logo.scale-125.png" />
-    <Content Include="Assets\Square44x44Logo.scale-150.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-400.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-16_altform-unplated.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-32_altform-unplated.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-48_altform-unplated.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-256_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
