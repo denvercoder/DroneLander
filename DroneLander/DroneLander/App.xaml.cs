@@ -16,13 +16,13 @@ namespace DroneLander
         public App()
         {
             InitializeComponent();
-
+            //test
             MainPage = new NavigationPage(new DroneLander.MainPage());
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            MobileCenter.Start("6ff0692a-f229-4976-b403-c73823306304", typeof(Analytics));
         }
 
         protected override void OnSleep()
@@ -33,11 +33,6 @@ namespace DroneLander
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
-
-        protected override void OnLaunch()
-        {
-            MobileCenter.Start("6ff0692a-f229-4976-b403-c73823306304", typeof(Analytics));
         }
     }
 }
